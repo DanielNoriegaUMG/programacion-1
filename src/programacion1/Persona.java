@@ -7,7 +7,7 @@ package programacion1;
 
 /**
  *
- * @author HP INTEL
+ * @author Daniel Noriega
  */
 public class Persona extends Object{
     private String nombre;

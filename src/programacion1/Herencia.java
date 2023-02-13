@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author HP INTEL
+ * @author Daniel Noriega
  */
 public class Herencia {
 
@@ -19,6 +19,8 @@ public class Herencia {
      */
     public static void main(String[] args) {
         Alumno alumno = new Alumno();
+        Maestro maestro = new Maestro();
+        String materias[] = {"Programacion 1", "Matematicas Discretas", "Bases de Datos 1", "Algebra Lineal"};
         
         String title = "Registro de alumnos";
         
@@ -28,9 +30,17 @@ public class Herencia {
         alumno.setCarnet(parseInt(JOptionPane.showInputDialog(null,"Digita el carnet del alumno",title,3)));
         alumno.setCorreo(JOptionPane.showInputDialog(null,"Escribe el correo del alumno", title, 3));
         alumno.setDireccion(JOptionPane.showInputDialog(null, "Escribe la direccion del alumno", title, 3));
-        
         alumno.mostrarInfo();
-        
+
+        maestro.setNombre("Irvin");
+        maestro.setApellido("Gonzales");
+        maestro.setEdad(34);
+        maestro.setCarnet(342214);
+        maestro.setDpi(892432412);
+        maestro.setTotal(1);
+        maestro.setCursos(materias);
+        maestro.mostrarInfo();
+
     }
     
 }
