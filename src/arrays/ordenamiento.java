@@ -29,10 +29,5 @@ public class ordenamiento {
         for (int i = 0; i < numeros.length; i++) {
             System.out.print(numeros[i] + " ");
         }
-        
-        System.out.print("\n\nDescendente: ");
-        for (int i = numeros.length - 1; i >= 0; i--) {
-            System.out.print(numeros[i] + " ");
-        }
     }
 }
